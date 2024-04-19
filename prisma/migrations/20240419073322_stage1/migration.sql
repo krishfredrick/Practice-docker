@@ -1,7 +1,0 @@
--- CreateTable
-CREATE TABLE "TODO" (
-    "id" TEXT NOT NULL PRIMARY KEY,
-    "message" TEXT NOT NULL,
-    "createAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "updateAt" DATETIME NOT NULL
-);

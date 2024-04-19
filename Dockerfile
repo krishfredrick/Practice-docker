@@ -1,15 +1,17 @@
 From node:21-alpine
 
-WORKDIR /.
+WORKDIR /app
 
 COPY package.* .
-COPY ./prisma .
 
 RUN yarn install
-RUN yarn build
-RUN yarn prisma generate
 
 COPY . .
+
+RUN yarn prisma generate
+
+RUN yarn build
+
 
 EXPOSE  4020
 CMD [ "yarn", "start" ]

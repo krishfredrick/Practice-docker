@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "build": "yarn tsc -b",
-    "start": "node dist/app.js",
+    "start": "node disc/app.js",
     "dev": "nodemon src/app.ts"
   },
   "license": "MIT",
